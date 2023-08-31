@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/bootstrap-5.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container {
+            border: 5px solid green;
+            margin-top: 2rem;
+
+        }
+
+        .container-fluid {
+            border: 5px solid rgb(18, 17, 17);
+        }
+
+        /* .row {
+            border: 4px solid rgb(22, 20, 20);
+        } */
+
+        .yellow {
+            /* min-height: 250px; */
+            background: rgb(249, 249, 6);
+            /* font-size: 22px; */
+        }
+
+        .pink {
+            /* min-height: 250px; */
+            background: rgb(229, 118, 212);
+        }
+
+        .orange {
+            /* min-height: 250px; */
+            background: rgb(223, 91, 43);
+            /* font-size: 12px; */
+        }
+
+        .blue {
+            /* min-height: 250px; */
+            background: rgb(160, 230, 228);
+            /* font-size: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-md-12 py-3 text-center">
+                <h2 class="text-danger">BootStrap Form Classes</h2>
+            </div>
+
+            <div class="col-12 py-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Sizing  -->
+            <div class="col-12 py-3 mt-4">
+                <input class="form-control form-control-lg mb-3" type="text" placeholder=".form-control-lg"
+                    aria-label=".form-control-lg example">
+                <input class="form-control mb-3" type="text" placeholder="Default input"
+                    aria-label="default input example">
+                <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm"
+                    aria-label=".form-control-sm example">
+            </div>
+
+
+            <!-- Form Text  -->
+            <div class=" g-3 align-items-center mt-5">
+                <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label">Password</label>
+                </div>
+                <div class="col-auto">
+                    <input type="password" id="inputPassword6" class="form-control"
+                        aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                        Must be 8-20 characters long.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Disabled  -->
+            <input class="form-control mt-5" type="text" placeholder="Disabled input"
+                aria-label="Disabled input example" disabled>
+            <input class="form-control mt-3" type="text" value="Disabled readonly input"
+                aria-label="Disabled input example" disabled readonly>
+
+
+            <!-- Readonly     -->
+            <input class="form-control mt-5" type="text" value="Readonly input here..."
+                aria-label="readonly input example" readonly>
+
+
+            <!-- Readonly plain text  -->
+            <div class="mb-3 row mt-5">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                        value="email@example.com">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+
+
+            <form class="row g-3">
+                <div class="col-auto">
+                    <label for="staticEmail2" class="visually-hidden">Email</label>
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail2"
+                        value="email@example.com">
+                </div>
+                <div class="col-auto">
+                    <label for="inputPassword2" class="visually-hidden">Password</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                </div>
+            </form>
+
+            <!-- File input  -->
+            <div class="mb-3 mt-5">
+                <label for="formFile" class="form-label">Default file input example</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+                <input class="form-control" type="file" id="formFileDisabled" disabled>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="formFileSm" class="form-label">Small file input example</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+            </div>
+
+
+            <div>
+                <label for="formFileLg" class="form-label">Large file input example</label>
+                <input class="form-control form-control-lg" id="formFileLg" type="file">
+            </div>
+
+
+            <!-- Color -->
+            <label for="exampleColorInput" class="form-label mt-5">Color picker</label>
+            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+                title="Choose your color">
+
+            <!-- DataList -->
+            <label for="exampleDataList" class="form-label mt-5">Datalist example</label>
+            <input class="form-control mb-5" list="datalistOptions" id="exampleDataList"
+                placeholder="Type to search...">
+            <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+            </datalist>
+
+
+            <select class="form-select-lg mb-5" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+
+            <select class="form-select mb-5" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+
+            <select class="form-select-sm mb-5" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <!-- Multi-select  -->
+            <select class="form-select-sm mb-5" aria-label="Default select example" multiple>
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </div>
+</body>
+
+</html>

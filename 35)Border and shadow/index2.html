@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .border-custom {
+            border: 5px solid green;
+            margin-top: 2px;
+        }
+
+        .shadow-custom {
+           box-shadow: 0 2px 10px rgba(0,0,0,1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="text-success display-4">Border ans shadow</h2>
+            </div>
+            <div class="col-md-12">
+                Apply border
+                <!-- <div class="border p-4"> -->
+                <!-- <div class="border-top p-4"> -->
+                <div class="border-start p-4 m-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita eaque nemo iure pariatur
+                    facere sequi optio debitis hic fuga.
+                </div>
+                <br><br><br>
+                to remove border
+                <!-- <div class="border-custom border-0 p-4"> -->
+                <!-- <div class="border-custom border-top-0 p-4"> -->
+                <!-- <div class="border-custom border-bottom-0 p-4"> -->
+                <div class="border-custom border-end-0 p-4 m-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita eaque nemo iure pariatur
+                    facere sequi optio debitis hic fuga.
+                </div>
+                <br><br><br>
+                Border Colour
+                <!-- <div class="border border-primary p-4 m-4"> -->
+                <div class="border border-danger p-4 m-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita eaque nemo iure pariatur
+                    facere sequi optio debitis hic fuga.
+                </div>
+
+
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control border-success" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+                    Dangerous heading
+                </div>
+
+                <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+                    Changing border color and width
+                </div>
+                <br><br><br>
+                Border width
+                <!-- <div class="border border-2 p-4 m-4"> -->
+                <!-- <div class="border border-3 p-4 m-4"> -->
+                <div class="border border-5 p-4 m-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita eaque nemo iure pariatur
+                    facere sequi optio debitis hic fuga.
+                </div>
+                <br><br><br>
+
+
+                Border Radius
+                <!-- <div class="border border-5 rounded p-4 m-4"> -->
+                <!-- <div class="border border-5 rounded-top p-4 m-4"> -->
+                <div class="border border-5 rounded-end p-4 m-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita eaque nemo iure pariatur
+                    facere sequi optio debitis hic fuga.
+                </div>
+                <div class="image">
+                    <img src="./car.jpg" class="img-fluid rounded-pill" alt="">
+                </div>
+
+                Shadow
+                <!-- <div class=" shadow-custom p-3 mb-5 bg-body-tertiary rounded">No shadow</div> -->
+                <div class="shadow-none shadow-custom p-3 mb-5 bg-body-tertiary rounded">No shadow</div>
+                <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</div>
+                <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
+                <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

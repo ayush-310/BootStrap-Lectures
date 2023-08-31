@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/bootstrap-5.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container {
+            border: 5px solid green;
+            margin-top: 2rem;
+
+        }
+
+        .container-fluid {
+            border: 5px solid rgb(18, 17, 17);
+        }
+
+        /* .row {
+            border: 4px solid rgb(22, 20, 20);
+        } */
+
+        .yellow {
+            /* min-height: 250px; */
+            background: rgb(249, 249, 6);
+            /* font-size: 22px; */
+        }
+
+        .pink {
+            /* min-height: 250px; */
+            background: rgb(229, 118, 212);
+        }
+
+        .orange {
+            /* min-height: 250px; */
+            background: rgb(223, 91, 43);
+            /* font-size: 12px; */
+        }
+
+        .blue {
+            /* min-height: 250px; */
+            background: rgb(160, 230, 228);
+            /* font-size: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <body class="container">
+        <div class="row p-4">
+            <div class="col-md-12 py-3 text-center">
+                <h2 class="text-danger">BootStrap Form Validation </h2>
+            </div>
+            <div class="col-12 py-3">
+                Base nav
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <br><br>
+                <nav class="nav">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </nav>
+
+
+                <br><br><br>
+                Horizontal alignment
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <br><br>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <br><br><br>
+                Vertical
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <nav class="nav flex-column">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </nav>
+
+                <br><br><br>
+                Tabs
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+
+                <br><br><br>
+                Pills
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <br><br><br>
+                Underline
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <br><br><br>
+                Fill and justify
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Much longer nav link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <br><br><br>
+                Working with flex utilities
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+                    <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
+                </nav>
+
+                <br><br><br>
+                Tabs with dropdowns
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+                <br><br><br>
+                Pills with dropdowns
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </body>
+
+</html>

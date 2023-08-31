@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/bootstrap-5.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container {
+            border: 5px solid green;
+            margin-top: 2rem;
+        }
+
+        .container-fluid {
+            border: 5px solid red;
+        }
+
+        .row {
+            border: 10px solid rgb(231, 5, 5);
+        }
+
+        .yellow {
+            /* min-height: 250px; */
+            background: rgb(249, 249, 6);
+            /* font-size: 22px; */
+        }
+
+        .pink {
+            /* min-height: 250px; */
+            background: rgb(229, 118, 212);
+        }
+
+        .orange {
+            /* min-height: 250px; */
+            background: rgb(223, 91, 43);
+            /* font-size: 12px; */
+        }
+
+        .blue {
+            /* min-height: 250px; */
+            background: rgb(160, 230, 228);
+            /* font-size: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row p-4">
+
+
+            <div class="col-md-12">
+                <!-- <button type="button" class="btn">Button</button> -->
+                <button type="button" class="btn btn-primary">Button</button>
+                <button type="submit" class="btn btn-secondary">Button</button>
+                <a href="#" class="btn btn-danger">Button</a>
+                <input type="button" class="btn btn-warning" value="button">
+                <input type="submit" class="btn btn-dark" value="Submit">
+                <input type="reset" class="btn btn-info" value="Reset">
+            </div>
+
+
+            <div class="col-md-12 pt-4">
+                <!-- <button type="button" class="btn-outline">Button</button> -->
+                <button type="button" class="btn btn-outline-primary">Button</button>
+                <button type="submit" class="btn btn-outline-secondary">Button</button>
+                <a href="#" class="btn btn-outline-danger">Button</a>
+                <input type="button" class="btn btn-outline-warning" value="button">
+                <input type="submit" class="btn btn-outline-dark" value="Submit">
+                <input type="reset" class="btn btn-outline-info" value="Reset">
+            </div>
+
+
+
+            <div class="col-md-12 pt-4">
+                <!-- <button type="button" class="btn-outline">Button</button> -->
+                <button type="button" class="btn btn-outline-primary btn-lg">Button</button>
+                <button type="submit" class="btn btn-outline-secondary">Button</button>
+                <a href="#" class="btn btn-outline-danger btn-sm">Button</a>
+            </div>
+
+
+            <!-- <div class="col-md-12 pt-4 d-grid gap-2"> -->
+            <div class="col-md-6 pt-4 d-grid gap-2">
+                <!-- <button type="button" class="btn-outline">Button</button> -->
+                <button type="button" class="btn btn-outline-primary">Button</button>
+                <button type="submit" class="btn btn-outline-secondary">Button</button>
+                <a href="#" class="btn btn-outline-danger">Button</a>
+            </div>
+
+
+           
+            <div class="col-md-6 pt-4">
+                <button type="button" class="btn btn-outline-primary">Button</button>
+                <button type="submit" class="btn btn-outline-secondary disabled">Button</button>
+                <a href="#" class="btn btn-outline-danger active">Button</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

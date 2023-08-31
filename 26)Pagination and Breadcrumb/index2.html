@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/bootstrap-5.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container {
+            border: 5px solid green;
+            margin-top: 2rem;
+        }
+
+        .container-fluid {
+            border: 5px solid red;
+        }
+
+        .row {
+            border: 10px solid rgb(231, 5, 5);
+        }
+
+        .yellow {
+            /* min-height: 250px; */
+            background: rgb(249, 249, 6);
+            /* font-size: 22px; */
+        }
+
+        .pink {
+            /* min-height: 250px; */
+            background: rgb(229, 118, 212);
+        }
+
+        .orange {
+            /* min-height: 250px; */
+            background: rgb(223, 91, 43);
+            /* font-size: 12px; */
+        }
+
+        .blue {
+            /* min-height: 250px; */
+            background: rgb(160, 230, 228);
+            /* font-size: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-md-12 py-3 text-center">
+                <h2 class="text-danger">BootStrap Pagination & Breadcrumb Classes</h2>
+            </div>
+
+            <!-- Table Head -->
+            <div class="col-12 py-3">
+                <div class="table-responsive">
+                    <table class="table caption-top">
+                        <caption>List of Users</caption>
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <th scope="row">Total</th>
+                            <td colspan="2">1000</td>
+                            <td>Final</td>
+                        </tfoot>
+                    </table>
+
+
+                    <!-- Breadcrumb  -->
+                    <!-- Example1  -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                    </nav>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+
+                    <!-- example2 -->
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb pt-2">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+                    <!-- example3 -->
+                    <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                        <ol class="breadcrumb pt-2">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+
+
+                    <!-- Pagination  -->
+                    <!-- Example 1 -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pt-5">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+
+
+                    <!-- Example 2 -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+
+                    <!-- Example 3 -->
+                    <nav aria-label="...">
+                        <ul class="pagination pagination-lg">
+                            <li class="page-item disabled">
+                                <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <nav aria-label="...">
+                        <ul class="pagination ">
+                            <li class="page-item disabled">
+                                <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                   
+
+
+                    <!-- Pagination  -->
+                    <nav aria-label="...">
+                        <ul class="pagination pagination-sm">
+                            <li class="page-item disabled">
+                                <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                                <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

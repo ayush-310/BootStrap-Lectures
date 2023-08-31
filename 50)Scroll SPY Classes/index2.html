@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        .custom_scroll {
+            position: relative;
+            height: 200px;
+            margin-top: 0.5rem;
+            overflow: auto;
+        }
+
+        .vertical_scroll {
+            position: relative;
+            height: 350px;
+            overflow: auto;
+        }
+
+        #home,
+        #features,
+        #pricing,
+        #contact {
+            min-height: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center py-4">
+                <h2 class="text-success display-4">Scroll SPY Classes</h2>
+            </div>
+            <br><br>
+
+            Navbar
+            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">First</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                data-bs-smooth-scroll="true" class="scrollspy-example custom_scroll" tabindex="0">
+                <h4 id="scrollspyHeading1">First heading</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quia? Ipsam, sapiente aperiam sequi
+                    numquam modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quidem dolore. Tenetur
+                    fugit placeat eius distinctio. Architecto, esse harum. Assumenda recusandae quidem maiores culpa
+                    nobis aliquid sunt optio dicta, voluptate molestiae. Dolores vero fugiat facere nobis rem itaque
+                    aperiam, natus consectetur nostrum similique quis explicabo corporis consequatur neque ducimus
+                    nulla! dolore, minus at praesentium delectus dignissimos fuga cum exercitationem laudantium
+                    illo ea deserunt perferendis.</p>
+
+                <h4 id="scrollspyHeading2">Second heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, accusamus quis nam quas assumenda
+                    culpa quidem voluptatum! Numquam, expedita. Illo quos, nulla hic cumque atque dignissimos nostrum
+                    impedit quibusdam. Soluta?</p>
+
+                <h4 id="scrollspyHeading3">Third heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi commodi odio dolore minima
+                    provident accusamus! Error numquam laudantium Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Minima in consequatur aliquid! Deleniti corporis maiores ullam doloremque. Dolore debitis
+                    mollitia, error saepe aperiam libero. Nisi autem ipsam voluptatibus ut pariatur. est quam dolores
+                    itaque illum cupiditate, deserunt,
+                    temporibus esse ut incidunt.</p>
+
+                <h4 id="scrollspyHeading4">Fourth heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet dicta iusto pariatur saepe
+                    earum sunt velit doloremque suscipit dolore sequi eius vitae deserunt ratione magni rem, nemo aut
+                    ullam.</p>
+
+                <h4 id="scrollspyHeading5">Fifth heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos quibusdam, repellendus
+                    possimus minus praesentium. Quaerat, eius omnis incidunt atque tempore ipsam, deleniti cumque harum
+                    eaque, commodi repellat molestias temporibus?Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Qui aperiam est ipsum cupiditate impedit expedita, illum saepe placeat ea? Doloribus illum sed
+                    dolorum aliquid molestiae eligendi, rerum vitae beatae distinctio.</p>
+            </div>
+
+            <br><br><br>
+
+
+            Nested nav
+            <div class="row">
+                <div class="col-4">
+                    <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Item 1</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                            </nav>
+                            <a class="nav-link" href="#item-2">Item 2</a>
+                            <a class="nav-link" href="#item-3">Item 3</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div class="col-8">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                        class="scrollspy-example-2" tabindex="0">
+                        <div id="item-1">
+                            <h4>Item 1</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur delectus veniam et
+                                incidunt quia, quod possimus praesentium, minus commodi mollitia dolores non corporis
+                                nihil ullam provident? Labore laborum dicta perferendis!</p>
+                        </div>
+                        <div id="item-1-1">
+                            <h5>Item 1-1</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eos a dicta perferendis
+                                fugiat perspiciatis pariatur ipsa voluptate odio aliquid obcaecati minima expedita
+                                architecto, debitis necessitatibus dolore minus consequuntur dolorum!</p>
+                        </div>
+                        <div id="item-1-2">
+                            <h5>Item 1-2</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa aliquid
+                                voluptatem fuga ducimus quae facere dolores quam, voluptatum ullam reprehenderit,
+                                pariatur consectetur velit eveniet quia veniam delectus expedita provident.</p>
+                        </div>
+                        <div id="item-2">
+                            <h4>Item 2</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint fuga doloremque
+                                ipsum fugiat nulla architecto perspiciatis atque rerum aliquam exercitationem
+                                recusandae, magni porro molestiae temporibus doloribus qui. Alias, a.</p>
+                        </div>
+                        <div id="item-3">
+                            <h4>Item 3</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cupiditate? Est
+                                dolor rerum vel soluta optio? Tempora at, eveniet, nostrum aliquam cumque deserunt nisi
+                                cum minima incidunt natus debitis unde.</p>
+                        </div>
+                        <div id="item-3-1">
+                            <h5>Item 3-1</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis explicabo
+                                magni minus consequuntur quia temporibus corporis facilis, atque autem optio voluptate
+                                architecto. Possimus nostrum dolorem cupiditate voluptates accusamus fuga!</p>
+                        </div>
+                        <div id="item-3-2">
+                            <h5>Item 3-2</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eius incidunt. Saepe
+                                doloribus excepturi libero sint aspernatur. Quaerat ex nesciunt eaque aliquid
+                                voluptatem, qui, expedita reiciendis eum molestias vel alias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+        List group
+        <div class="row">
+            <div class="col-4">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                    class="scrollspy-example custom_scroll" tabindex="0">
+                    <h4 id="list-item-1">Item 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore possimus
+                        repellendus unde veniam harum distinctio illo quos eum numquam.</p>
+                    <h4 id="list-item-2">Item 2</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi illo similique nobis neque
+                        dignissimos ad, quis pariatur delectus est doloribus deserunt sed tenetur asperiores accusamus
+                        labore sint atque, itaque provident!</p>
+                    <h4 id="list-item-3">Item 3</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi illo similique nobis neque
+                        dignissimos ad, quis pariatur delectus est doloribus deserunt sed tenetur asperiores accusamus
+                        labore sint atque, itaque provident!</p>
+                    <h4 id="list-item-4">Item 4</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi illo similique nobis neque
+                        dignissimos ad, quis pariatur delectus est doloribus deserunt sed tenetur asperiores accusamus
+                        labore sint atque, itaque provident!</p>
+                </div>
+            </div>
+            <br><br><br>
+
+            Simple anchors
+
+            <div class="row">
+                <div class="col-4">
+                    <div id="simple-list-example"
+                        class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+                        <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
+                        <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
+                        <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
+                        <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
+                        <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
+                        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <h4 id="simple-list-item-1">Item 1</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum quos autem dolore
+                            fugit dolorem aspernatur aliquam exercitationem suscipit minus, repellat enim cum adipisci
+                            molestias nisi? Numquam quia ab nesciunt.</p>
+                        <h4 id="simple-list-item-2">Item 2</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum quos autem dolore
+                            fugit dolorem aspernatur aliquam exercitationem suscipit minus, repellat enim cum adipisci
+                            molestias nisi? Numquam quia ab nesciunt.</p>
+                        <h4 id="simple-list-item-3">Item 3</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum quos autem dolore
+                            fugit dolorem aspernatur aliquam exercitationem suscipit minus, repellat enim cum adipisci
+                            molestias nisi? Numquam quia ab nesciunt.</p>
+                        <h4 id="simple-list-item-4">Item 4</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum quos autem dolore
+                            fugit dolorem aspernatur aliquam exercitationem suscipit minus, repellat enim cum adipisci
+                            molestias nisi? Numquam quia ab nesciunt.</p>
+                        <h4 id="simple-list-item-5">Item 5</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum quos autem dolore
+                            fugit dolorem aspernatur aliquam exercitationem suscipit minus, repellat enim cum adipisci
+                            molestias nisi? Numquam quia ab nesciunt.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
